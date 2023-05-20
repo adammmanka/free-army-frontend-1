@@ -41,6 +41,7 @@
     "yup": "^0.32.9"
   },
   "scripts": {
+    "develop": "concurrently \"react-scripts start\" \" nodemon ./src/services/server.js\"",
     "build:css": "postcss src/css/tailwind.css -o src/index.css",
     "watch:css": "postcss src/css/tailwind.css -o src/index.css -w",
     "start": "react-scripts start",
